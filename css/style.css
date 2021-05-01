@@ -1,0 +1,167 @@
+/* RESET */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  color: black;
+  background-color: white;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo_img img {
+  width: 400px;
+}
+
+/* logo */
+div.logo#logo_img img{
+  width: 150px;
+}
+
+/* MENU */
+.menu ul li{
+  display: inline-block;
+  padding: 10px;
+}
+.menu ul{
+  background-color: black;
+}
+.menu ul li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+/* COVER */
+.cover{
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* intro */
+/* .intro_left, .intro_right, .phongTam, .soFa{
+  float: left;
+  width: 49%;
+}
+.intro_left, .phongTam{
+  margin-right: 2%;
+}
+.intro img{
+  width: 100%;
+}
+.phongKhach, .phongTam_soFa{
+  margin-bottom: 20px;
+}
+.clear{
+  clear: both;
+} */
+
+.intro {
+  /* độ ưu tiên cao nhất => !important */
+  background-color: blue !important;
+}
+
+.intro__left, .intro__right, .bath__room, .living__room {
+  float: left;
+  width: 50%;
+}
+
+.intro__left {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+
+  padding: 5px 10px 5px 10px;
+  margin: 5px 10px 5px 10px;
+  /* top -> right -> bottom -> left */
+
+  padding: 5px 10px 5px;
+  margin: 5px 10px 5px;
+  /* top -> right + left -> bottom ===> ít dùng */
+
+  padding: 5px 10px;
+  margin: 5px 10px;
+  /* top + bottom -> right + left ===> dùng nhiều */
+
+  padding: 5px;
+  margin: 5px;
+  /* top + right + bottom + left */
+}
+
+.held-date-01 .held-date-01__title {
+  
+}
+
+.held-date-01 .held-date-01__list.held-date-01__list--horizontal > li {
+  display: inline-block;
+}
+
+.held-date-01 .held-date-01__list.held-date-01__list--horizontal .seminar__item {
+  background-color: blue;
+}
+
+.held-date-01 .held-date-01__list.held-date-01__list--horizontal .seminar__item.seminar__item--bg-red {
+  background-color: red;
+}
+
+.intro__right > .top {
+  padding-bottom: 10px;
+}
+
+.intro__right  {
+  padding-left: 5px;
+}
+
+.intro img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+/* best-sell */
+.best-sell h1{
+  text-align: center;
+  margin: 20px 0;
+}
+.best-sell .item{
+  float: left;
+  width: 24%;
+  margin-right:1.33%;
+}
+.best-sell .item:nth-child(4){
+  margin-right:0;
+}
+.best-sell img{
+  width: 100%;
+}
+
+/* banner */
+.banner{
+  background-image: url("../img/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+.circle{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgba(128, 30, 30, 0.5);
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Buoi 2 _ CSS</title>
+
+  <!-- Trong 3 loại: inline, internal, external => internal vs external có độ ưu tiên như nhau, thằng dưới đè thằng trên -->
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .intro {
+      background-color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- logo -->
+  <div class="logo" id="logo_img">
+    <img src="./img/LOGO.png" alt="logo" />
+  </div>
+
+  <!-- menu -->
+  <div class="menu">
+    <!-- ul>li*5>a -->
+    <ul>
+      <li><a href="">TRANG CHỦ</a></li>
+      <li><a href="">SẢN PHẨM</a></li>
+      <li><a href="">CHI TIẾT</a></li>
+      <li><a href="">GIỚI THIỆU</a></li>
+      <li><a href="">LIÊN HỆ</a></li>
+    </ul>
+  </div>
+
+  <!-- cover -->
+  <div style="background-image: url(./img/slider_1.jpg);" class="cover"></div>
+
+  <!-- intro -->
+  <!-- Trong 3 loại: inline, internal, external => inline có độ ưu tiên cao nhất -->
+  <div class="intro" style="background-color: blueviolet;">
+    <!-- Quy tắc BEM -->
+
+    <div class="intro__left">
+      <div class="top__left">
+        <div class="bath__room">
+          <img src="./img/nha_tam.jpg" alt="" />
+        </div>
+        <div class="living__room">
+          <img src="./img/sofa.jpg" alt="">
+        </div>
+      </div>
+      <div class="bottom__left">
+        <img src="./img/noi_that.jpg" alt="">
+      </div>
+    </div>
+    <div class="intro__right">
+      <div class="top">
+        <img src="./img/phong_khach.jpg" alt="">
+      </div>
+      <div class="bottom">
+        <img src="./img/van_phong.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+  <!-- best-sell -->
+  <div class="best-sell">
+    <h1>Các sản phẩm bán chạy</h1>
+    <div class="sell-item">
+      <div class="item">
+        <img src="./img/sp_1.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="./img/sp_2.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="./img/sp_3.jpg" alt="">
+      </div>
+      <div class="item">
+        <img src="./img/sp_4.jpg" alt="">
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+  <!-- BEM
+  block: trước __ (2 dấu shift -)
+  element: sau __
+  modifiers: -- (2 dấu gạch không shift)
+  
+  note: 2 từ trở lên thì nối bằng dấu - -->
+
+  <div class="held-date-01">
+    <h2 class="held-date-01__title">HELD DATE LIST</h2>
+    <ul class="held-date-01__list held-date-01__list--horizontal">
+      <li class="held-date-01__item held-date-01__item--bg-red">1</li>
+      <li class="held-date-01__item">2</li>
+      <li class="held-date-01__item">3</li>
+      <li class="held-date-01__item held-date-01__item--bg-red">4</li>
+    </ul>
+  </div>
+
+  <div class="article">
+    <h2 class="article__title">ARTICLE</h2>
+    <div class="article__list">
+
+      <div class="article__item">
+        <h3 class="item__title">Buổi học CSS của Haro</h3>
+        <p class="item__content">
+          <span class="content__left"></span>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae et aperiam unde praesentium voluptatum explicabo vitae sint reiciendis quidem architecto.
+        </p>
+        <div class="item__description">descriptio</div>
+      </div>
+
+      <div class="article__item">
+        <h3 class="item__title">Buổi học CSS của Haro</h3>
+        <p class="item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae et aperiam unde praesentium voluptatum explicabo vitae sint reiciendis quidem architecto.</p>
+        <div class="item__description">descriptio</div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="held-date-01__list">
+    <li class="seminar__item">5</li>
+    <li class="seminar__item">6</li>
+  </ul>
+
+  <!-- banner -->
+  <div class="banner">
+    <div class="circle">
+      <p>SALE OFF</p>
+      <p>50%</p>
+      <p>Các loại sofa trong tháng 7</p>
+    </div>
+  </div>
+</body>
+
+</html>
